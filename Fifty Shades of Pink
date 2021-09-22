@@ -1,0 +1,23 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int numButtons = sc.nextInt();
+    int count = 0;
+    for(int j = 0; j < numButtons; j++) {
+      String buttonColor = sc.nextLine().toLowerCase();
+      if(buttonColor.length() < 4) {
+        break;
+      }
+      for(int i = 0; i < buttonColor.length()-3; i++) {
+        String curr = buttonColor.substring(i, i+4);
+        if(curr.equals("pink") || curr.equals("rose")) {
+             count++;
+             break;
+           }
+      }
+    }
+    if(count > 0) System.out.print(count);
+    else {System.out.print("I must watch Star Wars with my daughter");}
+  }
+}
