@@ -1,0 +1,23 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int left = sc.nextInt();
+    int right = sc.nextInt();
+
+    if(left == right && left == 0)
+      System.out.print("Not a moose.");
+    else if(left == right){
+      System.out.print("Even "); 
+      System.out.print(left+right);
+    }
+    else if(left > right){
+      System.out.print("Odd ");
+      System.out.print(left*2);
+    }
+    else{
+      System.out.print("Odd ");
+      System.out.print(right*2);
+    }
+  }
+}
