@@ -1,0 +1,15 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int N = sc.nextInt();
+    while(N-- >0)
+    {
+      int b = sc.nextInt();
+      double p = sc.nextDouble();
+      System.out.println();
+      System.out.println(60*b/p);
+      System.out.println();
+    }
+  }
+}
